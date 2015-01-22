@@ -1,29 +1,35 @@
 \documentclass{article}
-\usepackage{epsfig}
-\textwidth 6in
-\addtolength{\oddsidemargin}{-0.5in}
-\textheight 9in
-\addtolength{\topmargin}{-0.5in}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{0.5cm}
-\topskip 0.0in
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
 \begin{document}
+\begin{minipage}{0.45\textwidth}
 {\Large Shubham Jain}
-\vspace{2mm}
+\\ 2nd year Undergraduate
+\\ Department of Computer Science and Engineering 
+\\ Indian Institute of Technology, Kanpur
 \\
-2nd year Undergraduate \hfill Email: shubhja@iitk.ac.in
-\\
-Department of Computer Science and Engineering \hfill Phone: (+91) 7754916035
-\\
-Indian Institute of Technology, Kanpur  \hfill      Address: Room no. 347, Hall3
-\\
-\\
+\\ Email: shubhja@iitk.ac.in
+\\  Phone: (+91) 7754916035
+\\  Address: Room no. 347, Hall3
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\hfill{\includegraphics[height=3cm]{Photo}}
+\end{minipage}
+\\ \vspace{5 mm}
+\\  
 {\large Achievements}
-\vspace{-5mm}
 \begin{description}
  \item[$\bullet $] Secured an All India Rank (AIR) of 210 in IIT-JEE 2013 (JEE ADVANCED) from among 150,000 aspirants
  \item[$\bullet $] Secured an All India Rank (AIR) of 92 in JEE MAINS 2013 from among 1,400,000 aspirants
  \item[$\bullet $] Qualified for ACM ICPC (International Collegiate Programming Contest) Amritapuri Regionals 2013 securing rank 72 among 1500 teams in the Online Round.
  \item[$\bullet $] Secured 60th Rank out of 250 teams in ACM-ICPC Amritapuri Onsite Contest 2014-15 after clearing the Online Round.
 \end{description}
+
 \end{document}
