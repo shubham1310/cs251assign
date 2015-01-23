@@ -1,5 +1,7 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{cite}
+\usepackage{url}
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -26,7 +28,7 @@
 \\Reversing the series:
 \\$S_{n}$ = (a+(n-1)d) + (a+(n-2)d) +...+ (a+2d) + (a+d) + a
 \\Adding the corresponding terms, noting that they add up to 2a+(n-1)d everytime:
-\\2*$S_{n}$=(2a+(n-1)d) + ... + (2a+(n-1)d)
+\\2*$S_{n}$=$\underbrace{(2a+(n-1)d) + ... + (2a+(n-1)d)}_{n terms}$
 \\There are n of these terms, so:
 \\ \vspace{0.8mm} 2*$S_{n}$=n*(2a + (n-1)d)
 \\ \vspace{0.8mm} $S_{n}$=$\frac{n(2a + (n-1)d)}{2}$
@@ -42,4 +44,21 @@ so we can say the sum of the series is the first term plus the last term multipl
  The constant value of the ratio is called as the common ratio of the geometric progression .
  \\Let T be an geometric progression that has a as the first term and common ratio is r, then we can write it's $n^{th}$ term as:
  \\$T_{n}$ = a $r^{n-1}$
+ \\
+ \\
+ {\large Sum of Geometric Series } ~\cite{wiki}
+ \vspace{2.5mm}
+\\Let $S_n = \sum_{j \mathop = 0}^{n - 1}$ a $r^j$.
+\\Then:
+\\$(r - 1) S_n =r S_n - S_n$
+\\ \hspace*{14mm} = a($r \sum_{j \mathop = 0}^{n - 1} r^j - \sum_{j \mathop = 0}^{n - 1} r^j$)
+\\ \hspace*{14mm}  =a($ \sum_{j \mathop = 1}^n r^j - \sum_{j \mathop = 0}^{n - 1} r^j $)
+\\ \hspace*{14mm}  =a($r^n + \sum_{j \mathop = 1}^{n-1} r^j - \left({r^0 + \sum_{j \mathop = 1}^{n - 1} r^j}\right)$)
+\\ \hspace*{14mm}  =a($r^n - r^0$)
+\\ \hspace*{14mm}  =a($r^n - 1 $)
+\\
+\\ Hence, $S_n$ = a ($\frac{r^n -1}{r-1}$)
+\vspace{10mm}
+\bibliography{citation}{}
+\bibliographystyle{plain}
 \end{document}
