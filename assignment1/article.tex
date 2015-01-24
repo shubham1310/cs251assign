@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{cite}
 \usepackage{url}
+\usepackage{amsmath}
 \usepackage{geometry}
  \geometry{
  a4paper,
@@ -19,22 +20,22 @@
  {\emph Definition:} \hspace{2mm}A sequence in which the difference between any two consecutive term is constant is called as {\emph Arithimetic Progression(AP)}.
  The constant value that defines the difference between any two consecutive terms is called the {\emph Common Difference}.
  \\ Let T be an arithmetic progression that has a as the first term and common difference of d, then we can write it's $n^{th}$ term as:
- \\$T_{n}$ = a + (n-1)d
+ \\\vspace{1mm}$T_{n}$ = a + (n-1)d
 \vspace{4mm} \\ 
  {\large Sum of Arithimetic Series}
  \vspace{2mm}
 \\Let the first term be a and and common difference d, then the sum of arithmetic series for n terms,$S_{n}$ is:
-\\$S_{n}$ = a + (a+d) + (a+2d) +...+ (a+(n-2)d) + (a+(n-1)d) 
+\\\vspace{1mm}$S_{n}$ = a + (a+d) + (a+2d) +...+ (a+(n-2)d) + (a+(n-1)d) 
 \\Reversing the series:
-\\$S_{n}$ = (a+(n-1)d) + (a+(n-2)d) +...+ (a+2d) + (a+d) + a
+\\\vspace{1mm}$S_{n}$ = (a+(n-1)d) + (a+(n-2)d) +...+ (a+2d) + (a+d) + a
 \\Adding the corresponding terms, noting that they add up to 2a+(n-1)d everytime:
-\\2*$S_{n}$=$\underbrace{(2a+(n-1)d) + ... + (2a+(n-1)d)}_{n terms}$
+\\\vspace{1mm}2*$S_{n}$=$\underbrace{(2a+(n-1)d) + ... + (2a+(n-1)d)}_{n terms}$
 \\There are n of these terms, so:
-\\ \vspace{0.8mm} 2*$S_{n}$=n*(2a + (n-1)d)
-\\ \vspace{0.8mm} $S_{n}$=$\frac{n(2a + (n-1)d)}{2}$
+\\ \vspace{2mm} 2*$S_{n}$=n*(2a + (n-1)d)
+\\ \vspace{2mm} $S_{n}$=$\frac{n(2a + (n-1)d)}{2}$
 \\Also, the first term in the series is a, and the last one is a+(n-1)d,
 so we can say the sum of the series is the first term plus the last term multiplied by the number of terms divided by 2.
-\\\vspace{0.8mm}i.e, $S_{n}$ =$\frac{n}{2}$($a_{1}$+$a_{n}$)
+\\\vspace{1mm}i.e, $S_{n}$ =$\dfrac{n}{2}$($a_{1}$+$a_{n}$)
 \vspace{5mm}
 \\
 {\Large Geometric Progression(GP)}
@@ -47,18 +48,18 @@ so we can say the sum of the series is the first term plus the last term multipl
  \\
  \\
  {\large Sum of Geometric Series } ~\cite{wiki}
- \vspace{2.5mm}
-\\Let $S_n = \sum_{j \mathop = 0}^{n - 1}$ a $r^j$.
+ \vspace{0mm}
+\\Let $S_n =\displaystyle\sum_{j \mathop = 0}^{n - 1}$ a $r^j$.
 \\Then:
-\\$(r - 1) S_n =r S_n - S_n$
-\\ \hspace*{14mm} = a($r \sum_{j \mathop = 0}^{n - 1} r^j - \sum_{j \mathop = 0}^{n - 1} r^j$)
-\\ \hspace*{14mm}  =a($ \sum_{j \mathop = 1}^n r^j - \sum_{j \mathop = 0}^{n - 1} r^j $)
-\\ \hspace*{14mm}  =a($r^n + \sum_{j \mathop = 1}^{n-1} r^j - \left({r^0 + \sum_{j \mathop = 1}^{n - 1} r^j}\right)$)
-\\ \hspace*{14mm}  =a($r^n - r^0$)
-\\ \hspace*{14mm}  =a($r^n - 1 $)
+\\$(r - 1) S_n =r S_n - S_n$\vspace{1mm}
+\\ \hspace*{14mm} = a($r \displaystyle\sum_{j \mathop = 0}^{n - 1} r^j - \displaystyle\sum_{j \mathop = 0}^{n - 1} r^j$)\vspace{1mm}
+\\ \hspace*{14mm}  =a($ \displaystyle\sum_{j \mathop = 1}^n r^j - \displaystyle\sum_{j \mathop = 0}^{n - 1} r^j $\vspace{1mm})
+\\ \hspace*{14mm}  =a$ \Bigg(r^n + \displaystyle\sum_{j \mathop = 1}^{n-1} r^j - \left({r^0 + \displaystyle\sum_{j \mathop = 1}^{n - 1} r^j}\right) \Bigg) $ \vspace{1mm}
+\\ \hspace*{14mm}  =a($r^n - r^0$) \vspace{1mm}
+\\ \hspace*{14mm}  =a($r^n - 1 $)\vspace{1mm}
 \\
-\\ Hence, $S_n$ = a ($\frac{r^n -1}{r-1}$)
-\vspace{10mm}
+\\ Hence, $S_n$ = a ($\dfrac{r^n -1}{r-1}$)
+\vspace{5mm}
 \bibliography{citation}{}
 \bibliographystyle{plain}
 \end{document}
