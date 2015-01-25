@@ -8,6 +8,8 @@
  top=20mm,
  bottom=20mm,
  }
+ \newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
 \begin{document}
 \begin{minipage}{0.45\textwidth}
 {\Large Shubham Jain}
@@ -23,7 +25,16 @@
 \hfill{\includegraphics[height=3cm]{Photo}}
 \end{minipage}
 \\ \vspace{5 mm}
-\\  
+\\
+{\large Educational Qualifications}
+\\\\
+\begin{tabular}{ | c | c | c | c |}\hline
+Year & Degree / Certificate & Institute & CPI / \% \\\hline
+2017* (Expected) & \specialcell{Bachelor Of Technology,\\Computer Science and Engineering }& \specialcell{Indian Institute Of Technology,\\ Kanpur }& CPI = 10.0/10.0 \\[2.5ex] \hline
+2013 & Class XII  (M. P. Board) & Shanti Niketan & 92 \% \\ [1ex] \hline
+2011 & Class X (CBSE) & Vatsalya Senior Sec. School & CGPA=9.8/10 \\ [1ex] \hline
+\end{tabular}
+\\ \\ \\
 {\large Achievements}
 \begin{description}
  \item[$\bullet $] Secured an All India Rank (AIR) of 210 in IIT-JEE 2013 (JEE ADVANCED) from among 150,000 aspirants
