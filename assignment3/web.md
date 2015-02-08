@@ -1,6 +1,7 @@
+<link rel="shortcut icon" href="iitk.jpg">
+
 Hi I am Shubham Jain a 2nd year CSE underdraduate at IIT Kanpur 
 ----
-
 
 <div style="float:right; margin-right:40px">![](photo1.jpg)</div>
 ### Contact:
