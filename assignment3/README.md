@@ -1,1 +1,1 @@
-This is the assignment on making a homepage using markdown
+This is the repository for website
