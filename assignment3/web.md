@@ -1,5 +1,6 @@
 Shubham Jain 
 ======
+![](photo1.jpg)
 Junior Undergraduate
 
 Department of Computer Science
