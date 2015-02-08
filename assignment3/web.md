@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="iitk.jpg">
+<link rel="icon" type="image/jpg" href="iitk.jpg" />
 
 Hi I am Shubham Jain a 2nd year CSE underdraduate at IIT Kanpur 
 ----
