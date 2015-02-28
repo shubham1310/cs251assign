@@ -1,9 +1,9 @@
 #!/usr/bin/awk -f
 BEGIN {FS="|";
-	for(i=0 ; i<=NF+1; i++){
+	for(i=0 ; i<=10; i++){
 		sum[i]=0;
-		mini[i] =99;
-		max[i] =-1;
+		mini[i]=100000;
+		max[i]=-1;
 		sd[i]=0;
 	}
 }
@@ -24,17 +24,21 @@ BEGIN {FS="|";
 	}
 
 END{ printf "max    |       |" ;
-	for(i=3 ; i<=NF;i++){
+	for(i=3 ; i<NF;i++){
 		printf max[i];
 		printf FS;
 	}
-	printf " %d\n", max[NF+1];
+	printf max[i];
+	printf " " FS " ";
+	print max[i+1];
 	printf "min    |       |" ;
-	for(i=3 ; i<=NF;i++){
-		printf "%d",mini[i];
+	for(i=3 ; i<NF;i++){
+		printf mini[i];
 		printf FS;
 	}
-	printf " %d\n", min[NF+1];
+	printf mini[i];
+	printf " " FS " ";
+	print mini[i+1];
 	printf "mean   |       |" ;
 	for(i=3 ; i<=NF;i++){
 		printf " %.2f " ,sum[i]/NR;
