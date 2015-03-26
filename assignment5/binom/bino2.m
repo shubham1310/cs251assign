@@ -1,9 +1,2 @@
 y=binornd(50,0.3,100000,1);
-x=zeros(51,2);
-for i = 1 : 100000
-   x(y(i)+1,2)++;
-end
-for i = 1 : 51
-   x(i,1) = i-1;
-end
-save bino2 x
+save bino2 y
