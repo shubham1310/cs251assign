@@ -1,14 +1,14 @@
 #!/usr/bin/gnuplot
 set term postscript eps enhanced color 24
 
-set output 'graph.eps'
+set output 'a5.eps'
 
 set xlabel "x"
-set ylabel "Function"
+set ylabel "Probability Density"
 
 set title "Probability Distributions"
 
-#set key top left
+set xtics 5
 set key at 50,0.14
 set xrange [0:50]
 set yrange [0:0.14]
