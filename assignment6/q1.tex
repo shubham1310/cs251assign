@@ -4,14 +4,14 @@
 
 \begin{document}
 \begin{tikzpicture}
-\begin{axis}[xlabel={$x$},ylabel={Probability Distribution},width=10cm, height=10cm,
+\begin{axis}[xlabel={$x$},ylabel={Probability Distribution[scaled up by 100]},width=10cm, height=10cm,
 xmin=0, xmax=50,
-ymin=0, ymax=0.13,ytick={0,0.04,0.08,0.12}]
-\addplot [color=red,solid] table[x index=0,y index=1,col sep=space ] {a5};
+ymin=0, ymax=0.13,ytick={0,0.04,0.08,0.12},scaled y ticks={base 10:2}]
+\addplot [color=red,solid] table[x index=0,y index=1,col sep=space ] {q1.dat};
 \addlegendentry{Binomial}
-\addplot [color=orange,solid] table[x index=0,y index=2,col sep=space] {a5};
+\addplot [color=orange,solid] table[x index=0,y index=2,col sep=space] {q1.dat};
 \addlegendentry{Poisson}
-\addplot [color=green,solid] table[x index=0,y index=3,col sep=space] {a5};
+\addplot [color=green,solid] table[x index=0,y index=3,col sep=space] {q1.dat};
 \addlegendentry{Gaussian}
 
 \end{axis}
