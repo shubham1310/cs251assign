@@ -1,0 +1,47 @@
+\documentclass{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\begin{document}
+\pagestyle{empty}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20, 
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+    
+\begin{tikzpicture}[node distance = 2.5cm, auto]
+    % Place nodes
+    \node [block] (init) {Pre-Registration};
+    \node [cloud, below of=init] (course) {Request for Courses};
+    \node [cloud, below left of=course] (compulsory) {Compulsory courses};
+    \node [block, below of=compulsory] (haveto) {Have to be done};
+    \node [cloud, below right of=course] (electives) {Elective courses};
+    \node [decision, below of=electives] (status) {Got the courses you like ?};
+    \node [block, below of=status] (gotall) {Have a happy semester};
+    \node [block, below right of=gotall ] (adddrop) {Add-Drop};
+    \node [cloud,below of=adddrop] (talk) {Talk to Proffesor of the courses you didn't get};
+    \node [block,below right of=talk] (gotit) {Huraay!! Enjoy studies};
+    \node [block,below left of=talk] (didnt) {Make the best of the courses you have};
+    
+    % Draw edges
+    \path [line] (init) -- (course);
+    \path [line] (course) -- (compulsory);
+    \path [line] (course) -- (electives);
+    \path [line] (electives) -- (status);
+    \path [line] (compulsory) -- (haveto);
+    \path [line] (status) -- node {yes} (gotall);
+    \path [line] (status) -| node  {no} (adddrop);
+    \path [line] (adddrop) -- (talk);
+    \path [line] (talk) -- (gotit);
+    \path [line] (talk) -- (didnt);
+\end{tikzpicture}
+
+
+\end{document}
